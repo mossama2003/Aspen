@@ -1,0 +1,57 @@
+name: aspen
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.6
+  read_more_text: ^0.0.5
+  flutter_svg: ^2.0.10+1
+  floating_navbar: ^2.0.2
+
+  # Controller
+  flutter_bloc: ^8.1.5
+
+  # Database
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/svg/
+
+  fonts:
+    - family: Hiatus
+      fonts:
+        - asset: assets\fonts\Hiatus.ttf
+
+    - family: Montserrat
+      fonts:
+        - asset: assets\fonts\Montserrat-Light.ttf
+          weight: 100
+        - asset: assets\fonts\Montserrat-Regular.ttf
+          weight: 300
+        - asset: assets\fonts\Montserrat-SemiBold.ttf
+          weight: 600
